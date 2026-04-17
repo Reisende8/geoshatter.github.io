@@ -1,122 +1,527 @@
-Privacy Policy for Geoshatter
-Effective Date: April 15, 2026
-Last Updated: April 15, 2026
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for the Geoshatter Android application.">
+  <title>Privacy Policy — Geoshatter</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --color-text: #222;
+      --color-bg: #fff;
+      --color-muted: #666;
+      --color-border: #ddd;
+      --color-code-bg: #f2f2f2;
+      --color-link: #0066cc;
+      --color-nav-bg: #f8f8f8;
+    }
 
-1. Introduction
-This Privacy Policy describes how personal information is handled when you use Geoshatter (the “Application”, package name com.geoshatter), a free-to-play mobile game for Android devices. Geoshatter is developed and distributed as an independent project by the developer (“we”, “us”, or “our”).
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-text: #ddd;
+        --color-bg: #111;
+        --color-muted: #999;
+        --color-border: #333;
+        --color-code-bg: #222;
+        --color-link: #6bb3ff;
+        --color-nav-bg: #1a1a1a;
+      }
+    }
 
-Geoshatter is designed to run primarily offline. The game state, your progress, purchases, and settings are stored locally on your device. We do not operate a game server, we do not maintain user accounts, and we do not ask you to register or provide personal information to play.
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
 
-However, the Application integrates a small number of third-party services (advertising, crash reporting, analytics, and in-app purchases) that may collect information automatically. This policy explains what those services collect, why, and what choices you have.
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 3rem;
+      line-height: 1.6;
+      color: var(--color-text);
+      background: var(--color-bg);
+    }
 
-2. Information We Do Not Collect
-We do not directly collect any of the following from you:
+    /* ── Header ─────────────────────────────── */
+    header {
+      margin-bottom: 2rem;
+    }
 
-Name, email address, phone number, or postal address
-Account credentials or login information
-Photos, contacts, microphone, camera, or location data
-Messages, gameplay content you create, or clipboard contents
-The Application does not request access to your precise location, contacts, camera, microphone, or storage. It requests only the following Android permissions:
+    header h1 {
+      font-size: 1.9rem;
+      margin: 0 0 0.25rem;
+    }
 
-INTERNET — required to load ads, process in-app purchases, and report crashes.
-VIBRATE — used for gameplay haptic feedback. No data leaves the device.
-POST_NOTIFICATIONS — used to display optional in-game notifications. No data is transmitted.
-3. Information Collected Automatically by Third-Party Services
-The Application integrates the following third-party SDKs (software development kits). These services act as independent data controllers or processors for the information they collect, under their own privacy policies.
+    header p {
+      color: var(--color-muted);
+      font-size: 0.95rem;
+      margin: 0;
+    }
 
-3.1 Google AdMob (Advertising)
-We use Google AdMob to display rewarded video ads that you may optionally watch in exchange for in-game rewards. When AdMob serves an ad, it may collect:
+    /* ── Table of Contents ──────────────────── */
+    nav[aria-label="Table of contents"] {
+      background: var(--color-nav-bg);
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 2rem;
+    }
 
-Your Android Advertising ID (a resettable identifier)
-IP address and approximate (coarse) location derived from it
-Device information (model, operating system version, language, time zone)
-Interactions with the ad (impressions, clicks, viewability)
-A limited identifier used to prevent ad fraud and limit ad frequency
-AdMob uses this information to deliver, measure, and (if you consent) personalize advertising. For users in the European Economic Area (EEA), the United Kingdom, or Switzerland, the Application displays a Google-certified consent dialog (Google User Messaging Platform, UMP) the first time you play. Your choice there determines whether AdMob serves you personalized or non-personalized ads. You can change your choice at any time from the in-game settings menu.
+    nav[aria-label="Table of contents"] h2 {
+      font-size: 1rem;
+      margin: 0 0 0.5rem;
+      border: none;
+      padding: 0;
+    }
 
-Learn more in Google’s policies: Google Privacy Policy and How Google uses data from AdMob.
+    nav[aria-label="Table of contents"] ol {
+      margin: 0;
+      padding-left: 1.5rem;
+    }
 
-3.2 Firebase Crashlytics (Crash Reporting)
-We use Firebase Crashlytics (a Google service) to detect crashes and stability issues in the release build of the Application. When the Application crashes, Crashlytics collects:
+    nav[aria-label="Table of contents"] li {
+      margin-bottom: 0.2rem;
+    }
 
-Anonymized stack trace information identifying the code path that failed
-Device state at the time of the crash (device model, OS version, free memory, orientation)
-A randomly generated Crashlytics Installation UUID that allows crash reports from the same installation to be grouped together; it is not linked to your identity
-The app version the crash occurred on
-Crash reporting is disabled in debug builds so that development crashes never reach production. You can reset the Crashlytics Installation UUID at any time by clearing the Application’s data from Android system settings or reinstalling the Application.
+    nav[aria-label="Table of contents"] a {
+      text-decoration: none;
+    }
 
-See the Firebase privacy and security information for more details.
+    nav[aria-label="Table of contents"] a:hover {
+      text-decoration: underline;
+    }
 
-3.3 Firebase Analytics (Usage Analytics)
-We include the Firebase Analytics SDK to receive aggregate usage information (for example, number of sessions, session duration, crashes per version, country-level installs). Firebase Analytics collects a limited set of automatic events and device/app information including:
+    /* ── Main Sections ──────────────────────── */
+    main section {
+      margin-bottom: 1.5rem;
+    }
 
-App open, first open, app update, and session events
-Device information (model, OS version, language, app version)
-Country / region (derived from IP address, which is then discarded by Google)
-A Firebase Installation ID that is not linked to your personal identity
-We do not log custom events that identify individuals, and we do not link analytics data to any advertising identifier. Analytics data is used solely to understand product health and guide improvements.
+    main h2 {
+      margin-top: 2rem;
+      border-bottom: 1px solid var(--color-border);
+      padding-bottom: 0.25rem;
+    }
 
-3.4 Google Play Billing (In-App Purchases)
-The Application offers optional in-app purchases (for example, cosmetic upgrades and offers that remove ads). All purchases are processed by Google Play Billing. We never see or store your payment card number, billing address, Google account, or email.
+    main h3 {
+      margin-top: 1.25rem;
+    }
 
-Google Play returns to the Application only a purchase token and product identifier so the Application can unlock the purchased content locally on your device. Please review Google’s Privacy Policy to understand how Google handles your payment information.
+    ul {
+      padding-left: 1.5rem;
+    }
 
-3.5 Summary of Data Recipients
-Information collected by the SDKs above is transmitted directly from your device to Google LLC and its affiliates. We do not operate our own server, so no game-related personal data is transmitted to, or stored by, us. We do not sell or rent personal information to anyone.
+    li {
+      margin-bottom: 0.4rem;
+    }
 
-4. Purposes and Legal Bases for Processing (GDPR)
-If you are located in the EEA, the UK, or Switzerland, the legal bases we (and our SDK providers) rely on are:
+    code {
+      background: var(--color-code-bg);
+      padding: 0 0.25rem;
+      border-radius: 3px;
+    }
 
-Consent (Art. 6(1)(a) GDPR) — for personalized advertising and, where applicable, analytics. You provide consent via the in-app UMP dialog and may withdraw it at any time.
-Legitimate interest (Art. 6(1)(f) GDPR) — for non-personalized advertising, crash reporting, fraud prevention, and aggregate analytics needed to keep the Application functional and stable.
-Performance of a contract (Art. 6(1)(b) GDPR) — to process optional in-app purchases you initiate.
-5. Your Advertising Choices
-Change consent: Open the in-game Settings menu to re-open the consent dialog and change your personalization choice.
-Opt out of personalized ads at the device level: Android → Settings → Privacy → Ads → Delete advertising ID (Android 12+) or Opt out of Ads Personalization.
-Reset your advertising ID: Android → Settings → Privacy → Ads → Reset advertising ID.
-6. Data Retention
-We do not retain personal data on our own servers, because we do not operate any. Third-party services retain data according to their own policies:
+    a {
+      color: var(--color-link);
+    }
 
-Google AdMob typically retains ad-serving logs for a limited period (see Google’s policy).
-Firebase Crashlytics retains crash records for up to 90 days by default.
-Firebase Analytics default retention is 2 months for event-level data and 14 months for user-level properties (subject to your consent where required).
-Data stored locally in the Application (your game progress) remains on your device until you uninstall the Application or clear its data.
+    address {
+      font-style: normal;
+    }
 
-7. Data Security
-All network communication between the Application and Google services occurs over HTTPS. Game data stored on your device is stored using Android’s standard application storage, protected by the Android sandbox from other applications. However, no method of electronic transmission or storage is 100% secure.
+    /* ── Footer ─────────────────────────────── */
+    footer {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--color-border);
+      font-size: 0.85rem;
+      color: var(--color-muted);
+    }
+  </style>
+</head>
+<body>
 
-8. International Data Transfers
-Because the SDKs we integrate are operated by Google LLC and its affiliates, information collected may be processed in the United States and other countries where Google operates. Google relies on Standard Contractual Clauses and other lawful transfer mechanisms for transfers out of the EEA; see Google’s privacy policy for details.
+  <!-- ════════════ HEADER ════════════ -->
+  <header>
+    <h1>Privacy Policy for Geoshatter</h1>
+    <p>
+      <strong>Effective Date:</strong> April 15, 2026<br>
+      <strong>Last Updated:</strong> April 15, 2026
+    </p>
+  </header>
 
-9. Your Rights
-9.1 Users in the EEA / UK (GDPR)
-You have the right to:
+  <!-- ════════════ TABLE OF CONTENTS ════════════ -->
+  <nav aria-label="Table of contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#not-collected">Information We Do Not Collect</a></li>
+      <li><a href="#third-party">Information Collected by Third-Party Services</a></li>
+      <li><a href="#legal-bases">Purposes and Legal Bases (GDPR)</a></li>
+      <li><a href="#ad-choices">Your Advertising Choices</a></li>
+      <li><a href="#retention">Data Retention</a></li>
+      <li><a href="#security">Data Security</a></li>
+      <li><a href="#transfers">International Data Transfers</a></li>
+      <li><a href="#rights">Your Rights</a></li>
+      <li><a href="#children">Children&rsquo;s Privacy</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
 
-Request access to personal data we or our processors hold about you
-Request correction or deletion of that data
-Object to or restrict certain processing
-Withdraw consent you previously gave
-Data portability
-Lodge a complaint with your national data-protection authority
-9.2 California Residents (CCPA / CPRA)
-Under the California Consumer Privacy Act, you have the right to know what personal information is collected, to request deletion, to correct inaccurate personal information, and to opt out of the “sale” or “sharing” of personal information. We do not sell personal information for monetary value. Certain advertising activities may constitute “sharing” for cross-context behavioral advertising under the CPRA; you can limit such sharing by opting out of personalized ads (see Section 5).
+  <!-- ════════════ POLICY BODY ════════════ -->
+  <main>
 
-9.3 How to Exercise Your Rights
-To exercise any of the rights above regarding data collected by the Application, contact us at the email address in Section 12. Because we do not operate a server and store no personal identifiers ourselves, most requests will require us to forward them to the relevant third party (for example Google). You may also contact Google directly to exercise rights regarding data they process.
+    <!-- §1 Introduction -->
+    <section id="introduction">
+      <h2>1. Introduction</h2>
+      <p>
+        This Privacy Policy describes how personal information is handled when you use
+        <strong>Geoshatter</strong> (the &ldquo;Application&rdquo;, package name
+        <code>com.geoshatter</code>), a free-to-play mobile game for Android devices.
+        Geoshatter is developed and distributed as an independent project by the developer
+        (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;).
+      </p>
+      <p>
+        Geoshatter is designed to run primarily offline. The game state, your progress,
+        purchases, and settings are stored locally on your device. We do not operate a game
+        server, we do not maintain user accounts, and we do not ask you to register or
+        provide personal information to play.
+      </p>
+      <p>
+        However, the Application integrates a small number of third-party services
+        (advertising, crash reporting, analytics, and in-app purchases) that may collect
+        information automatically. This policy explains what those services collect, why,
+        and what choices you have.
+      </p>
+    </section>
 
-10. Children’s Privacy
-Geoshatter is not directed to children under the age of 13, and is not knowingly used to solicit data from, or market to, children under 13. In order to comply with the Children’s Online Privacy Protection Act (COPPA), the EU General Data Protection Regulation (GDPR), and Google Play Families policies, the Application is intended for users who are at least 16 years of age.
+    <!-- §2 Information We Do Not Collect -->
+    <section id="not-collected">
+      <h2>2. Information We Do Not Collect</h2>
+      <p>We do not directly collect any of the following from you:</p>
+      <ul>
+        <li>Name, email address, phone number, or postal address</li>
+        <li>Account credentials or login information</li>
+        <li>Photos, contacts, microphone, camera, or location data</li>
+        <li>Messages, gameplay content you create, or clipboard contents</li>
+      </ul>
+      <p>
+        The Application does not request access to your precise location, contacts, camera,
+        microphone, or storage. It requests only the following Android permissions:
+      </p>
+      <ul>
+        <li><strong>INTERNET</strong> &mdash; required to load ads, process in-app purchases, and report crashes.</li>
+        <li><strong>VIBRATE</strong> &mdash; used for gameplay haptic feedback. No data leaves the device.</li>
+        <li><strong>POST_NOTIFICATIONS</strong> &mdash; used to display optional in-game notifications. No data is transmitted.</li>
+      </ul>
+    </section>
 
-If you are a parent or guardian and believe a child under 16 has used the Application, please contact us at the address below and we will work with you to remove any data that we are able to identify.
+    <!-- §3 Third-Party Services -->
+    <section id="third-party">
+      <h2>3. Information Collected Automatically by Third-Party Services</h2>
+      <p>
+        The Application integrates the following third-party SDKs (software development kits).
+        These services act as independent data controllers or processors for the information
+        they collect, under their own privacy policies.
+      </p>
 
-11. Changes to This Policy
-We may update this Privacy Policy from time to time to reflect changes in the Application, the SDKs it uses, or applicable law. When we do, we will update the “Last Updated” date at the top of this page. Material changes will also be surfaced in the Application before they take effect, where reasonably possible. Continued use of the Application after the changes take effect constitutes acceptance of the updated policy.
+      <!-- §3.1 AdMob -->
+      <section id="admob">
+        <h3>3.1 Google AdMob (Advertising)</h3>
+        <p>
+          We use Google AdMob to display rewarded video ads that you may optionally watch in
+          exchange for in-game rewards. When AdMob serves an ad, it may collect:
+        </p>
+        <ul>
+          <li>Your Android Advertising ID (a resettable identifier)</li>
+          <li>IP address and approximate (coarse) location derived from it</li>
+          <li>Device information (model, operating system version, language, time zone)</li>
+          <li>Interactions with the ad (impressions, clicks, viewability)</li>
+          <li>A limited identifier used to prevent ad fraud and limit ad frequency</li>
+        </ul>
+        <p>
+          AdMob uses this information to deliver, measure, and (if you consent) personalize
+          advertising. For users in the European Economic Area (EEA), the United Kingdom, or
+          Switzerland, the Application displays a Google-certified consent dialog (Google User
+          Messaging Platform, UMP) the first time you play. Your choice there determines
+          whether AdMob serves you personalized or non-personalized ads. You can change your
+          choice at any time from the in-game settings menu.
+        </p>
+        <p>
+          Learn more:
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>,
+          <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">How Google uses data from AdMob</a>.
+        </p>
+      </section>
 
-12. Contact
-If you have any questions about this Privacy Policy, or would like to exercise any of your rights under applicable privacy law, please contact the developer at:
+      <!-- §3.2 Crashlytics -->
+      <section id="crashlytics">
+        <h3>3.2 Firebase Crashlytics (Crash Reporting)</h3>
+        <p>
+          We use Firebase Crashlytics (a Google service) to detect crashes and stability
+          issues in the release build of the Application. When the Application crashes,
+          Crashlytics collects:
+        </p>
+        <ul>
+          <li>Anonymized stack trace information identifying the code path that failed</li>
+          <li>Device state at the time of the crash (device model, OS version, free memory, orientation)</li>
+          <li>A randomly generated <em>Crashlytics Installation UUID</em> that allows crash reports from the same installation to be grouped together; it is not linked to your identity</li>
+          <li>The app version the crash occurred on</li>
+        </ul>
+        <p>
+          Crash reporting is <strong>disabled in debug builds</strong> so that development
+          crashes never reach production. You can reset the Crashlytics Installation UUID at
+          any time by clearing the Application&rsquo;s data from Android system settings or
+          reinstalling the Application.
+        </p>
+        <p>
+          See
+          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy and security information</a>
+          for more details.
+        </p>
+      </section>
 
-Email: patrascuemil99@gmail.com
+      <!-- §3.3 Analytics -->
+      <section id="analytics">
+        <h3>3.3 Firebase Analytics (Usage Analytics)</h3>
+        <p>
+          We include the Firebase Analytics SDK to receive aggregate usage information (for
+          example, number of sessions, session duration, crashes per version, country-level
+          installs). Firebase Analytics collects a limited set of automatic events and
+          device/app information including:
+        </p>
+        <ul>
+          <li>App open, first open, app update, and session events</li>
+          <li>Device information (model, OS version, language, app version)</li>
+          <li>Country / region (derived from IP address, which is then discarded by Google)</li>
+          <li>A Firebase Installation ID that is not linked to your personal identity</li>
+        </ul>
+        <p>
+          We do not log custom events that identify individuals, and we do not link analytics
+          data to any advertising identifier. Analytics data is used solely to understand
+          product health and guide improvements.
+        </p>
+      </section>
 
-For requests, please include the word “Privacy” in the subject line and describe the nature of your request so we can respond efficiently.
+      <!-- §3.4 Billing -->
+      <section id="billing">
+        <h3>3.4 Google Play Billing (In-App Purchases)</h3>
+        <p>
+          The Application offers optional in-app purchases (for example, cosmetic upgrades
+          and offers that remove ads). All purchases are processed by Google Play Billing. We
+          never see or store your payment card number, billing address, Google account, or
+          email.
+        </p>
+        <p>
+          Google Play returns to the Application only a purchase token and product identifier
+          so the Application can unlock the purchased content locally on your device. Please
+          review
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google&rsquo;s Privacy Policy</a>
+          to understand how Google handles your payment information.
+        </p>
+      </section>
 
-This policy applies to the Geoshatter Android application, package name com.geoshatter, distributed through the Google Play Store.
+      <!-- §3.5 Summary -->
+      <section id="data-recipients">
+        <h3>3.5 Summary of Data Recipients</h3>
+        <p>
+          Information collected by the SDKs above is transmitted directly from your device to
+          Google LLC and its affiliates. We do not operate our own server, so no game-related
+          personal data is transmitted to, or stored by, us. We do not sell or rent personal
+          information to anyone.
+        </p>
+      </section>
+    </section>
+
+    <!-- §4 Legal Bases -->
+    <section id="legal-bases">
+      <h2>4. Purposes and Legal Bases for Processing (GDPR)</h2>
+      <p>
+        If you are located in the EEA, the UK, or Switzerland, the legal bases we (and our
+        SDK providers) rely on are:
+      </p>
+      <ul>
+        <li>
+          <strong>Consent</strong> (Art.&nbsp;6(1)(a) GDPR) &mdash; for personalized
+          advertising and, where applicable, analytics. You provide consent via the in-app
+          UMP dialog and may withdraw it at any time.
+        </li>
+        <li>
+          <strong>Legitimate interest</strong> (Art.&nbsp;6(1)(f) GDPR) &mdash; for
+          non-personalized advertising, crash reporting, fraud prevention, and aggregate
+          analytics needed to keep the Application functional and stable.
+        </li>
+        <li>
+          <strong>Performance of a contract</strong> (Art.&nbsp;6(1)(b) GDPR) &mdash; to
+          process optional in-app purchases you initiate.
+        </li>
+      </ul>
+    </section>
+
+    <!-- §5 Ad Choices -->
+    <section id="ad-choices">
+      <h2>5. Your Advertising Choices</h2>
+      <ul>
+        <li>
+          <strong>Change consent:</strong> Open the in-game Settings menu to re-open the
+          consent dialog and change your personalization choice.
+        </li>
+        <li>
+          <strong>Opt out of personalized ads at the device level:</strong>
+          Android &rarr; Settings &rarr; Privacy &rarr; Ads &rarr;
+          <em>Delete advertising ID</em> (Android&nbsp;12+) or
+          <em>Opt out of Ads Personalization</em>.
+        </li>
+        <li>
+          <strong>Reset your advertising ID:</strong>
+          Android &rarr; Settings &rarr; Privacy &rarr; Ads &rarr;
+          <em>Reset advertising ID</em>.
+        </li>
+      </ul>
+    </section>
+
+    <!-- §6 Data Retention -->
+    <section id="retention">
+      <h2>6. Data Retention</h2>
+      <p>
+        We do not retain personal data on our own servers, because we do not operate any.
+        Third-party services retain data according to their own policies:
+      </p>
+      <ul>
+        <li>Google AdMob typically retains ad-serving logs for a limited period (see Google&rsquo;s policy).</li>
+        <li>Firebase Crashlytics retains crash records for up to 90&nbsp;days by default.</li>
+        <li>Firebase Analytics default retention is 2&nbsp;months for event-level data and 14&nbsp;months for user-level properties (subject to your consent where required).</li>
+      </ul>
+      <p>
+        Data stored locally in the Application (your game progress) remains on your device
+        until you uninstall the Application or clear its data.
+      </p>
+    </section>
+
+    <!-- §7 Data Security -->
+    <section id="security">
+      <h2>7. Data Security</h2>
+      <p>
+        All network communication between the Application and Google services occurs over
+        HTTPS. Game data stored on your device is stored using Android&rsquo;s standard
+        application storage, protected by the Android sandbox from other applications.
+        However, no method of electronic transmission or storage is 100%&nbsp;secure.
+      </p>
+    </section>
+
+    <!-- §8 International Transfers -->
+    <section id="transfers">
+      <h2>8. International Data Transfers</h2>
+      <p>
+        Because the SDKs we integrate are operated by Google LLC and its affiliates,
+        information collected may be processed in the United States and other countries where
+        Google operates. Google relies on Standard Contractual Clauses and other lawful
+        transfer mechanisms for transfers out of the EEA; see Google&rsquo;s privacy policy
+        for details.
+      </p>
+    </section>
+
+    <!-- §9 Your Rights -->
+    <section id="rights">
+      <h2>9. Your Rights</h2>
+
+      <section id="rights-gdpr">
+        <h3>9.1 Users in the EEA / UK (GDPR)</h3>
+        <p>You have the right to:</p>
+        <ul>
+          <li>Request access to personal data we or our processors hold about you</li>
+          <li>Request correction or deletion of that data</li>
+          <li>Object to or restrict certain processing</li>
+          <li>Withdraw consent you previously gave</li>
+          <li>Data portability</li>
+          <li>Lodge a complaint with your national data-protection authority</li>
+        </ul>
+      </section>
+
+      <section id="rights-ccpa">
+        <h3>9.2 California Residents (CCPA / CPRA)</h3>
+        <p>
+          Under the California Consumer Privacy Act, you have the right to know what personal
+          information is collected, to request deletion, to correct inaccurate personal
+          information, and to opt out of the &ldquo;sale&rdquo; or &ldquo;sharing&rdquo; of
+          personal information. We do not sell personal information for monetary value.
+          Certain advertising activities may constitute &ldquo;sharing&rdquo; for
+          cross-context behavioral advertising under the CPRA; you can limit such sharing by
+          opting out of personalized ads (see <a href="#ad-choices">Section&nbsp;5</a>).
+        </p>
+      </section>
+
+      <section id="rights-exercise">
+        <h3>9.3 How to Exercise Your Rights</h3>
+        <p>
+          To exercise any of the rights above regarding data collected by the Application,
+          contact us at the email address in
+          <a href="#contact">Section&nbsp;12</a>. Because we do not operate a server and
+          store no personal identifiers ourselves, most requests will require us to forward
+          them to the relevant third party (for example Google). You may also contact Google
+          directly to exercise rights regarding data they process.
+        </p>
+      </section>
+    </section>
+
+    <!-- §10 Children -->
+    <section id="children">
+      <h2>10. Children&rsquo;s Privacy</h2>
+      <p>
+        Geoshatter is not directed to children under the age of 13, and is not knowingly used
+        to solicit data from, or market to, children under 13. In order to comply with the
+        Children&rsquo;s Online Privacy Protection Act (COPPA), the EU General Data
+        Protection Regulation (GDPR), and Google Play Families policies,
+        <strong>the Application is intended for users who are at least 16&nbsp;years of age</strong>.
+      </p>
+      <p>
+        If you are a parent or guardian and believe a child under 16 has used the Application,
+        please contact us at the address below and we will work with you to remove any data
+        that we are able to identify.
+      </p>
+    </section>
+
+    <!-- §11 Changes -->
+    <section id="changes">
+      <h2>11. Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time to reflect changes in the
+        Application, the SDKs it uses, or applicable law. When we do, we will update the
+        &ldquo;Last Updated&rdquo; date at the top of this page. Continued use of the
+        Application after the changes take effect constitutes acceptance of the updated
+        policy.
+      </p>
+    </section>
+
+    <!-- §12 Contact -->
+    <section id="contact">
+      <h2>12. Contact</h2>
+      <p>
+        If you have any questions about this Privacy Policy, or would like to exercise any of
+        your rights under applicable privacy law, please contact the developer at:
+      </p>
+      <address>
+        <strong>Email:</strong>
+        <a href="mailto:patrascuemil99@gmail.com">patrascuemil99@gmail.com</a>
+      </address>
+      <p>
+        For requests, please include the word &ldquo;Privacy&rdquo; in the subject line and
+        describe the nature of your request so we can respond efficiently.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- ════════════ FOOTER ════════════ -->
+  <footer>
+    <p>
+      This policy applies to the Geoshatter Android application, package name
+      <code>com.geoshatter</code>, distributed through the Google Play Store.
+    </p>
+  </footer>
+
+</body>
+</html>
